@@ -1,0 +1,49 @@
+//for
+
+for(let index = 0 ; index < 10 ; index++){
+    const elem = index;
+    console.log(elem);
+}
+//nested for
+for(let i = 0 ; i < 10 ; i++){
+    console.log(`outer${i}`);
+    for(let j = 0 ; j < i ; j++){
+            console.log(`outer ${j}`);
+    }
+}
+
+//break
+
+for(let index = 0 ; index <= 20 ; index++){
+    console.log(`Value of i is ${index}`);
+    if(index == 5){
+        break;//loops stop going forward
+    }
+}
+for(let index = 0 ; index <= 20 ; index++){
+     console.log(`Value of i is ${index}`);
+      if(index == 5){
+         continue;//loop skips that iteration and prints the remaining iterations
+    }
+}
+
+// ********WHILE*******
+let index3 = 0
+while(index <= 10){
+    console.log(`value of index is ${index}`);
+    index +=2;
+}
+let myarr = ["eshan", "akp", "superman"]
+
+let index2 = 0
+while(arr < myarr.length){
+    console.log(`Value is ${myarr[index2]}`);
+}
+
+// *****DO WHILE*****
+//first do work then check condition
+let i = 0
+do{
+    console.log(` ${i}`);
+    i++;
+}while(i <= 10);
